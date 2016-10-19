@@ -1,0 +1,5 @@
+{
+    "name": "mogic/mogic-phpcs",
+    "description": "PHP coding standard used at Mogic GmbH",
+    "license": "proprietary"
+}
