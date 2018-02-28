@@ -13,6 +13,7 @@
     <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
 
     <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
+    <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     <exclude name="Generic.PHP.ClosingPHPTag"/>
 
   </rule>
