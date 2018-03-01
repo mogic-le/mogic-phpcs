@@ -10,6 +10,41 @@ Used in several projects:
 
 Usage
 =====
+
+Create your own ``phpcs.xml`` file from this template and adjust it::
+
+  <?xml version="1.0"?>
+  <ruleset name="bellevue">
+    <description>project-specific coding standard</description>
+
+    <file>Classes</file>
+    <file>eid</file>
+
+    <exclude-pattern>*/lib/*</exclude-pattern>
+
+    <rule ref="./vendor/mogic/mogic-phpcs/Mogic/"/>
+  </ruleset>
+
+
+Project with composer
+---------------------
+Execute::
+
+  $ composer require git@gitlab.mogic.com:mogic/mogic-phpcs.git
+
+Then commit ``composer.json`` and ``composer.lock``.
+
+During the build, ``composer install`` needs to be called, which will fetch
+the coding standard from git.
+To make this work, the build container needs to contain a SSH key that has
+read-only access to the coding standards repository.
+
+Example: ``reos-docker -> web-build``
+
+
+
+Project without composer dependencies
+-------------------------------------
 In a project, create a ``composer.json`` file::
 
   {
@@ -36,20 +71,6 @@ Adjust ``Makefile``::
 
 Now run ``make update-phpcs`` and git commit the ``vendor/`` dir,
 ``composer.json`` and ``composer.lock``.
-
-Create your own ``phpcs.xml`` file from this template and adjust it::
-
-  <?xml version="1.0"?>
-  <ruleset name="bellevue">
-    <description>project-specific coding standard</description>
-
-    <file>Classes</file>
-    <file>eid</file>
-
-    <exclude-pattern>*/lib/*</exclude-pattern>
-
-    <rule ref="./vendor/mogic/mogic-phpcs/Mogic/"/>
-  </ruleset>
 
 
 Links
