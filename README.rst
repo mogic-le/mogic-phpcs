@@ -28,9 +28,18 @@ Create your own ``phpcs.xml`` file from this template and adjust it::
 
 Project with composer
 ---------------------
-Execute::
+Add the ``repositories`` to composer.json::
 
-  $ composer require git@gitlab.mogic.com:mogic/mogic-phpcs.git
+  "repositories": [
+      {
+          "type": "vcs",
+          "url": "git@gitlab.mogic.com:mogic/mogic-phpcs.git"
+      }
+  ]
+
+Now run::
+
+  $ composer require mogic/mogic-phpcs:dev-master
 
 Then commit ``composer.json`` and ``composer.lock``.
 
