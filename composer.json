@@ -1,5 +1,8 @@
 {
     "name": "mogic/mogic-phpcs",
     "description": "PHP coding standard used at Mogic GmbH",
-    "license": "proprietary"
+    "license": "proprietary",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
+    }
 }
