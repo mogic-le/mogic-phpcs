@@ -8,12 +8,14 @@
     <exclude name="PEAR.Commenting.FileComment"/>
     <exclude name="PEAR.Commenting.FunctionComment"/>
 
+    <exclude name="PEAR.Commenting.ClassComment.MissingAuthorTag"/>
     <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
     <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
     <exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag"/>
     <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
 
     <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
+    <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
     <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     <exclude name="Generic.PHP.ClosingPHPTag"/>
 
