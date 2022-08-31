@@ -6,6 +6,7 @@ Used in several projects:
 
 - bellevue
 - fio websitebuilder
+- Leipziger Foren webapp
 
 
 Usage
@@ -28,18 +29,21 @@ Create your own ``phpcs.xml`` file from this template and adjust it::
 
 Project with composer
 ---------------------
+Create an access token in Gitlab first with role "developer" and
+"read_repository" permission.
+
 Add the ``repositories`` to composer.json::
 
   "repositories": [
       {
           "type": "vcs",
-          "url": "git@gitlab.mogic.com:mogic/mogic-phpcs.git"
+          "url": "https://dummy:GITLABTOKEN@gitlab.mogic.com/mogic/mogic-phpcs.git"
       }
   ]
 
 Now run::
 
-  $ composer require mogic/mogic-phpcs:dev-master
+  $ composer require --dev mogic/mogic-phpcs:dev-master
 
 Then commit ``composer.json`` and ``composer.lock``.
 
