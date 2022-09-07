@@ -29,17 +29,8 @@ Create your own ``phpcs.xml`` file from this template and adjust it::
 
 Project with composer
 ---------------------
-Create an access token in Gitlab first with role "developer" and
-"read_repository" permission.
-
-Add the ``repositories`` to composer.json::
-
-  "repositories": [
-      {
-          "type": "vcs",
-          "url": "https://dummy:GITLABTOKEN@gitlab.mogic.com/mogic/mogic-phpcs.git"
-      }
-  ]
+The repository is mirrored automatically to Github: https://github.com/mogic-le/mogic-phpcs
+The package is also available on packagist: https://packagist.org/packages/mogic/mogic-phpcs
 
 Now run::
 
@@ -66,13 +57,7 @@ In a project, create a ``composer.json`` file::
       "license": "proprietary",
       "require-dev": {
           "mogic/mogic-phpcs": "dev-master"
-      },
-      "repositories": [
-          {
-              "type": "vcs",
-              "url": "git@gitlab.mogic.com:mogic/mogic-phpcs.git"
-          }
-      ]
+      }
   }
 
 Adjust ``Makefile``::
