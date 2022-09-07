@@ -79,9 +79,8 @@ class Sniffs_Commenting_DisallowShortDescToEqualClassOrMethodNameSniff
         ) {
             $error = 'Docblock short description is too similar to: "%s"';
             $phpcsFile->addError(
-                $error, $stackPtr, 'ShortDescSameAsClassName', $classNameContent
+                $error, $stackPtr, 'ShortDescSameAsClassName', [$classNameContent]
             );
         }
     }
 }
-
