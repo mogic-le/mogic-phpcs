@@ -2,12 +2,6 @@
 Mogic PHP coding standard
 *************************
 
-Used in several projects:
-
-- bellevue
-- fio websitebuilder
-- Leipziger Foren webapp
-
 
 Usage
 =====
