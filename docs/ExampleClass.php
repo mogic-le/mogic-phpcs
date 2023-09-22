@@ -48,10 +48,10 @@ class ExampleClass
         }
 
         switch (gettype($numberTwo)) {
-        case 'object':
-            throw new \Exception('Number two is an object');
-        default:
-            //all ok
+            case 'object':
+                throw new \Exception('Number two is an object');
+            default:
+                //all ok
         }
 
         return $numberOne + $numberTwo;
