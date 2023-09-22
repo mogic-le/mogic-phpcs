@@ -19,6 +19,8 @@
     <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     <exclude name="Generic.PHP.ClosingPHPTag"/>
 
+    <exclude name="PEAR.WhiteSpace.ScopeIndent"/>
+
   </rule>
 
   <rule ref="Squiz.Strings.ConcatenationSpacing">
@@ -34,5 +36,7 @@
       <property name="absoluteLineLimit" value="100"/>
     </properties>
   </rule>
+
+  <rule ref="Generic.WhiteSpace.ScopeIndent"/>
 
 </ruleset>

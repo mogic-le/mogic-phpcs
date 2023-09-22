@@ -1,4 +1,5 @@
 <?php
+
 namespace Mogic\Example;
 
 /**
@@ -47,12 +48,27 @@ class ExampleClass
         }
 
         switch (gettype($numberTwo)) {
-        case 'object':
-            throw new \Exception('Number two is an object');
-        default:
-            //all ok
+            case 'object':
+                throw new \Exception('Number two is an object');
+            default:
+                //all ok
         }
 
         return $numberOne + $numberTwo;
+    }
+
+    /**
+     * Both styles are allowed
+     */
+    public function lineBreaks(): void
+    {
+        $this->object->thisIsAMethodWithAVeryLongNameThatMakesUsRequireMultipleLines(
+            $param, 23, false
+        );
+        $this->object->thisIsAMethodWithAVeryLongNameThatMakesUsRequireMultipleLines(
+            $param,
+            23,
+            false
+        );
     }
 }
