@@ -2,6 +2,12 @@
 Mogic PHP coding standard
 *************************
 
+A set of rules for `PHP_CodeSniffer`__ and `PHP-CS-Fixer`__.
+
+
+__ https://github.com/squizlabs/PHP_CodeSniffer
+__ https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
+
 
 Usage
 =====
@@ -29,6 +35,7 @@ The package is also available on packagist: https://packagist.org/packages/mogic
 Now run::
 
   $ composer require --dev mogic/mogic-phpcs:dev-master
+  $ ln -s vendor/mogic/mogic-phpcs/.php-cs-fixer.php .php-cs-fixer.php
 
 Then commit ``composer.json`` and ``composer.lock``.
 
