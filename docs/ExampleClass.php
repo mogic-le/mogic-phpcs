@@ -55,4 +55,19 @@ class ExampleClass
 
         return $numberOne + $numberTwo;
     }
+
+    /**
+     * Both styles are allowed
+     */
+    public function lineBreaks(): void
+    {
+        $this->object->thisIsAMethodWithAVeryLongNameThatMakesUsRequireMultipleLines(
+            $param, 23, false
+        );
+        $this->object->thisIsAMethodWithAVeryLongNameThatMakesUsRequireMultipleLines(
+            $param,
+            23,
+            false
+        );
+    }
 }
