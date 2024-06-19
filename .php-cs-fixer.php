@@ -12,6 +12,7 @@ return $config->setRules(
             'on_multiline' => 'ignore',
             'keep_multiple_spaces_after_comma' => true,
         ],
+        'method_chaining_indentation' => true,
         'array_syntax' => ['syntax' => 'short'],
     ]
 );
