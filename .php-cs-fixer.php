@@ -14,5 +14,6 @@ return $config->setRules(
         ],
         'method_chaining_indentation' => true,
         'array_syntax' => ['syntax' => 'short'],
+        'single_space_around_construct' => true,
     ]
 );
