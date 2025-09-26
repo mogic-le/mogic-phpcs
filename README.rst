@@ -37,6 +37,7 @@ Now run::
   $ composer require --dev mogic/mogic-phpcs:dev-master
 
 and create ``.php-cs-fixer.php`` with the following content::
+
   <?php
   $config = require __DIR__ . '/vendor/mogic/mogic-phpcs/.php-cs-fixer.php';
 
