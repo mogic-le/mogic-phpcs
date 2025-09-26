@@ -35,9 +35,18 @@ The package is also available on packagist: https://packagist.org/packages/mogic
 Now run::
 
   $ composer require --dev mogic/mogic-phpcs:dev-master
-  $ ln -s vendor/mogic/mogic-phpcs/.php-cs-fixer.php .php-cs-fixer.php
 
-Then commit ``composer.json`` and ``composer.lock``.
+and create ``.php-cs-fixer.php`` with the following content::
+  <?php
+  $config = require __DIR__ . '/vendor/mogic/mogic-phpcs/.php-cs-fixer.php';
+
+  $finder = (new PhpCsFixer\Finder())
+      ->in(__DIR__ . '/local_packages/');
+
+  return $config
+      ->setFinder($finder);
+
+Then commit ``composer.json``, ``composer.lock`` and ``.php-cs-fixer.php``.
 
 During the build, ``composer install`` needs to be called, which will fetch
 the coding standard from git.
