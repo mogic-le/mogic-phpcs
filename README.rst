@@ -2,30 +2,13 @@
 Mogic PHP coding standard
 *************************
 
-A set of rules for `PHP_CodeSniffer`__ and `PHP-CS-Fixer`__.
+A set of rules for `PHP-CS-Fixer`__.
 
-
-__ https://github.com/squizlabs/PHP_CodeSniffer
 __ https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
 
 
 Usage
 =====
-
-Create your own ``phpcs.xml`` file from this template and adjust it::
-
-  <?xml version="1.0"?>
-  <ruleset name="bellevue">
-    <description>project-specific coding standard</description>
-
-    <file>Classes</file>
-    <file>eid</file>
-
-    <exclude-pattern>*/lib/*</exclude-pattern>
-
-    <rule ref="./vendor/mogic/mogic-phpcs/Mogic/"/>
-  </ruleset>
-
 
 Project with composer
 ---------------------
